@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "icecat"
+  (list "guile-git"
+        "icecat"
         "sbcl"
         "guile"
         "glances"
@@ -26,7 +27,6 @@
         "irssi"
         "offlineimap"
         "notmuch"
-        "htop"
         "fontconfig"
         "font-iosevka"
         "font-terminus"

@@ -1,4 +1,4 @@
-;; Apply using guix system reconfigure configuration.scm
+;; Apply using: guix system reconfigure configuration.scm
 
 (use-modules (gnu) (gnu packages shells))
 (use-service-modules desktop networking ssh xorg)
