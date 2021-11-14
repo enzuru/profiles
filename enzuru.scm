@@ -5,7 +5,11 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "guile-git"
+  (list "sendmail"
+        "ntp"
+        "notmuch"
+        "transset"
+        "guile-git"
         "icecat"
         "sbcl"
         "guile"
@@ -20,13 +24,11 @@
         "xsetroot"
         "xterm"
         "glibc-locales"
-        "node"
         "xrdb"
         "xfontsel"
         "curl@7.76"
         "irssi"
         "offlineimap"
-        "notmuch"
         "fontconfig"
         "font-iosevka"
         "font-terminus"
