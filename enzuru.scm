@@ -5,7 +5,11 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "sendmail"
+  (list "unzip"
+        "sdl2"
+        "gimp"
+        "imagemagick"
+        "sendmail"
         "ntp"
         "notmuch"
         "transset"
