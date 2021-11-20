@@ -1,0 +1,3 @@
+#!/bin/sh
+
+guix package --export-manifest > enzuru.scm
