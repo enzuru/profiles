@@ -5,7 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "nyxt"
+  (list "python"
+        "ruby"
+        "pianobar"
+        "nyxt"
         "gcc-toolchain"
         "screenfetch"
         "guile-chickadee"
