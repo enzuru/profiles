@@ -16,3 +16,7 @@ guix install -L ./guix-channel emacs-native-comp
 guix package -m enzuru.scm
 guile -l clone.scm
 ```
+
+# License
+
+Licensed under the GPLv3; copyright is assigned to the nonprofit Salma Karama, LLC
