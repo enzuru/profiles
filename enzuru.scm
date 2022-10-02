@@ -5,14 +5,15 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "ispell"
+  (list "exercism"
+        "openjdk"
+        "ispell"
         "bind"
         "dnsmasq"
         "icedove"
         "sbcl-drakma"
         "openssl"
         "htop"
-        "openjdk"
         "leiningen"
         "docker"
         "clojure"
