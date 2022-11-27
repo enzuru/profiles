@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "aspell-dict-en"
+  (list "openjdk:jdk"
+        "aspell-dict-en"
         "hunspell-dict-en-us"
         "hunspell"
         "ispell"
