@@ -5,7 +5,11 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "rust-lsp-server"
+  (list "emacs-vterm"
+        "guile-fibers"
+        "direnv"
+        "guile-gemini"
+        "rust-lsp-server"
         "ruby-solargraph"
         "ccls"
         "python-virtualenv"
