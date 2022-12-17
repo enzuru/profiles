@@ -5,7 +5,13 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-vterm"
+  (list "sbcl-sketch"
+        "vlc"
+        "curl"
+        "intltool"
+        "automake"
+        "autoconf"
+        "emacs-vterm"
         "guile-fibers"
         "direnv"
         "guile-gemini"
@@ -62,7 +68,6 @@
         "xterm"
         "xrdb"
         "xfontsel"
-        "curl"
         "irssi"
         "fontconfig"
         "font-iosevka"
@@ -100,7 +105,6 @@
         "ncurses"
         "libungif"
         "libjpeg"
-        "autoconf"
         "make"
         "neofetch"
         "the-silver-searcher"))
