@@ -17,7 +17,9 @@ guix package -m enzuru.scm
 guile -l clone.scm
 ```
 
-# Supported platforms
+# Tested platforms
+
+Probably works on any modern version of Guix. Here's what I've actually tested recently:
 
 - Guix 1.3
 - Guix 1.4
