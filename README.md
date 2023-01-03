@@ -2,7 +2,7 @@
 
 My Guix profiles written in Scheme Lisp available as a learning tool.
 
-The goal of my profiles are to create a Lisp-oriented workstation: the backend (operating system) is defined in Scheme Lisp and the frontend ("desktop" environment) and its tools are defined in Emacs Lisp. For portability, I write most of my personal tools in Common Lisp.
+The goal of my profiles are to create a Lisp-oriented workstation: the backend (operating system) is defined in Scheme Lisp and the frontend ("desktop" environment) and its tools are defined in Emacs Lisp. For portability, I write most of my personal tools in Common Lisp. Other popular languages are supported too.
 
 `enzuru.scm` installs important packages. `clone.scm` clones my [.emacs.d](https://github.com/enzuru/.emacs.d) and some important dotfiles for booting into [exwm](https://github.com/enzuru/.emacs.d), quicklisp, services for receiving and tagging email, etc. I also setup Emacs [with native compilation](https://www.emacswiki.org/emacs/GccEmacs).
 
