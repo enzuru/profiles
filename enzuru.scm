@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "pgcli"
+  (list "mc"
+        "pgcli"
         "php"
         "rust"
         "go"
