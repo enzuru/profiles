@@ -6,6 +6,8 @@ The goal of my profiles are to create a Lisp-oriented workstation: the backend (
 
 `enzuru.scm` installs important packages. `clone.scm` clones my [.emacs.d](https://github.com/enzuru/.emacs.d) and some important dotfiles for booting into the [exwm window manager](https://github.com/enzuru/.emacs.d), [Quicklisp](https://www.quicklisp.org/beta/), [services for receiving and tagging email](https://notmuchmail.org), etc. I also setup Emacs [with native compilation](https://www.emacswiki.org/emacs/GccEmacs).
 
+The goal is for Guix and Emacs to respectively provide the "backend" and "frontend" of my programming environment.
+
 You'll want to modify these files to meet your own usecase; shouldn't take long.
 
 Setting up my Guix system is as simple as:
