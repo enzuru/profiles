@@ -6,10 +6,11 @@
 
 (specifications->manifest
   (list "elixir"
+        "rust"
+        "ghc"
         "mc"
         "pgcli"
         "php"
-        "rust"
         "go@1.19.1"
         "ruby@3.2.0"
         "vlc"
@@ -31,7 +32,6 @@
         "gimp"
         "icecat"
         "node@14"
-        "ghc@8.10"
         "dbus"
         "screenfetch"
         "offlineimap3"
