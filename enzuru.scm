@@ -5,7 +5,9 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "elixir"
+  (list "guile-colorized"
+        "sbcl-kons-9"
+        "elixir"
         "rust"
         "ghc"
         "mc"
