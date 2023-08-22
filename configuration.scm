@@ -4,7 +4,7 @@
              (gnu packages shells)
              (nongnu packages linux)
              (nongnu system linux-initrd))
-(use-service-modules desktop networking ssh xorg)
+(use-service-modules desktop networking ssh xorg docker)
 
 (operating-system
  (locale "en_US.utf8")
@@ -21,7 +21,7 @@
                 (home-directory "/home/enzuru")
                 (shell (file-append fish "/bin/fish"))
                 (supplementary-groups
-                 '("wheel" "netdev" "audio" "video")))
+                 '("wheel" "netdev" "audio" "video" "docker")))
                %base-user-accounts))
  (packages
   (append
@@ -34,6 +34,7 @@
   (append
    (list (service openssh-service-type)
          (service tor-service-type)
+         (service docker-service-type)
          (set-xorg-configuration
           (xorg-configuration
            (keyboard-layout keyboard-layout))))
