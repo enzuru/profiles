@@ -13,11 +13,10 @@ You'll want to modify these files to meet your own usecase; shouldn't take long.
 Setting up my Guix system is as simple as:
 
 ```
-git clone https://github.com/flatwhatson/guix-channel.git
-guix install -L ./guix-channel emacs-native-comp
-guix package -m enzuru.scm
 guile -l clone.scm
+guix pull
 sudo guix system reconfigure configuration.scm
+guix package -m enzuru.scm
 ```
 
 Note, `sudo` is needed because that guix command requires the user's path, so don't just run it as root.
