@@ -5,7 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "firefox"
+  (list "kitty"
+        "font-fira-code"
+        "fontconfig"
+        "firefox"
         "ncurses"
         "mosh"
         "wireshark"
@@ -24,7 +27,6 @@
         "glu"
         "ccls"
         "ruby"
-        "fontconfig"
         "font-terminus"
         "strace"
         "mesa"
@@ -75,7 +77,6 @@
         "font-iosevka"
         "links"
         "ntp"
-        "rxvt-unicode"
         "guile@3.0.8"
         "aspell-dict-en"
         "hunspell-dict-en-us"
