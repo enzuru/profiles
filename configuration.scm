@@ -34,7 +34,8 @@
                 (service tor-service-type)
                 (service docker-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout))))
-   %desktop-services))
+          (modify-services %desktop-services
+                           (gdm-service-type config => (gdm-configuration (auto-suspend? #f))))))
 
  (bootloader
   (bootloader-configuration
