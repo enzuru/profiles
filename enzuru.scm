@@ -5,7 +5,16 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "mesa-utils"
+  (list "rocm-cmake"
+        "rocm-comgr"
+        "rocm-bandwidth-test"
+        "rocminfo"
+        "rocm-opencl-runtime"
+        "amdgpu-firmware"
+        "amd-microcode"
+        "xf86-video-amdgpu"
+        "radeontop"
+        "mesa-utils"
         "emacs"
         "mesa-opencl"
         "clojure-tools"
