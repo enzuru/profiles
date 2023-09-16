@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs"
+  (list "mesa-utils"
+        "emacs"
         "mesa-opencl"
         "clojure-tools"
         "clojure"
