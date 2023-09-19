@@ -33,7 +33,13 @@
   (append (list (service openssh-service-type)
                 (service tor-service-type)
                 (service docker-service-type)
-                (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout))))
+                (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
+                                                            (extra-config
+'("Section \"Device\"
+  Identifier \"AMD\"
+  Driver \"amdgpu\"
+  Option \"SWcursor\" \"on\"
+EndSection")))))
           (modify-services %desktop-services
                            (gdm-service-type config => (gdm-configuration (auto-suspend? #f))))))
 
