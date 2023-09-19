@@ -5,7 +5,9 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "rocm-cmake"
+  (list "innoextract"
+        "openmw"
+        "rocm-cmake"
         "rocm-comgr"
         "rocm-bandwidth-test"
         "rocminfo"
