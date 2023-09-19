@@ -5,7 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "steam"
+  (list "ocl-icd"
+        "clinfo"
+        "clpeak"
+        "steam"
         "innoextract"
         "openmw"
         "rocm-cmake"
