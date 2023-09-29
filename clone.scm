@@ -7,4 +7,5 @@
 
 (clone "https://github.com/stumpwm/stumpwm.git" "~/quicklisp/local-projects/stumpwm")
 (clone "https://github.com/stumpwm/clx-truetype.git" "~/quicklisp/local-projects/clx-truetype")
+(clone "https://github.com/xach/zpb-ttf.git" "~/quicklisp/local-projects/zpb-ttf")
 (clone "https://github.com/stumpwm/stumpwm-contrib.git" "~/.stumpwm.d/contrib")

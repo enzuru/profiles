@@ -41,7 +41,9 @@
   Option \"SWcursor\" \"on\"
 EndSection")))))
           (modify-services %desktop-services
-                           (gdm-service-type config => (gdm-configuration (auto-suspend? #f))))))
+                           (gdm-service-type config =>
+                                             (gdm-configuration (auto-suspend? #f)
+                                                                (debug? #t))))))
 
  (bootloader
   (bootloader-configuration
