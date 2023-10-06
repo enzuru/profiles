@@ -46,6 +46,7 @@ The goal is for Guix and Emacs to respectively provide the "backend" and "fronte
 
 - [Clojure](https://clojure.org/)
 - [Common Lisp](https://www.sbcl.org/) (Steel Bank)
+- [Emacs Lisp](https://en.wikipedia.org/wiki/Emacs_Lisp)
 - [Guile](https://www.gnu.org/software/guile/)
 
 ## Usage
