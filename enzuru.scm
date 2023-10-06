@@ -5,7 +5,16 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "font-bitstream-vera"
+  (list "windowmaker"
+        "gnustep-make"
+        "libobjc2"
+        "imagemagick"
+        "emacs-guix"
+        "guile-colorized"
+        "guile-readline"
+        "guile"
+        "font-fira-sans"
+        "font-bitstream-vera"
         "font-microsoft-web-core-fonts"
         "xlsfonts"
         "font-terminus"
@@ -54,7 +63,6 @@
         "ruby"
         "strace"
         "sbcl"
-        "guile-colorized"
         "elixir"
         "rust@1.67"
         "ghc"
@@ -91,7 +99,6 @@
         "font-iosevka"
         "links"
         "ntp"
-        "guile@3.0.8"
         "aspell-dict-en"
         "hunspell-dict-en-us"
         "hunspell"
