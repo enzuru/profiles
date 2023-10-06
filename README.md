@@ -8,6 +8,36 @@ The goal of my profiles are to create a Lisp-oriented workstation: the backend (
 
 The goal is for Guix and Emacs to respectively provide the "backend" and "frontend" of my programming environment.
 
+## Notable applications
+
+| Feature        | Tool                                                                  |
+|----------------|-----------------------------------------------------------------------|
+| Browser        | [Nyxt](https://nyxt.atlas.engineer/)                                  |
+| Editor         | [emacs](https://github.com/enzuru/.emacs.d)                           |
+| File manager   | [Midnight Commander](https://midnight-commander.org/wiki/NEWS-4.8.31) |
+| GPU stack      | [ROCm](https://www.amd.com/en/graphics/servers-solutions-rocm)        |
+| Shell          | [fish](https://fishshell.com/)                                        |
+| Terminal       | [kitty](https://sw.kovidgoyal.net/kitty/)                             |
+| Window manager | [StumpWM](https://stumpwm.github.io)                                  |
+
+## Development platforms
+
+- [C](https://en.wikipedia.org/wiki/C_(programming_language))
+- [C++](https://en.wikipedia.org/wiki/C%2B%2B)
+- [Clojure](https://clojure.org/)
+- [Common Lisp](https://www.sbcl.org/) (Steel Bank)
+- [Elixir](https://elixir-lang.org/)
+- [Go](https://go.dev/)
+- [Guile](https://www.gnu.org/software/guile/)
+- [Haskell](https://www.haskell.org/)
+- [Node.js](https://nodejs.org/en)
+- [PHP](https://www.php.net/)
+- [Python](https://www.python.org/)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rust](https://www.rust-lang.org/)
+
+## Usage
+
 You'll want to modify these files to meet your own usecase; shouldn't take long.
 
 Setting up my Guix system is as simple as:
@@ -21,13 +51,13 @@ guix package -m enzuru.scm
 
 Note, `sudo` is needed because that guix command requires the user's path, so don't just run it as root.
 
-# Tested platforms
+## Tested platforms
 
 Probably works on any modern version of Guix. Here's what I've actually tested recently:
 
 - Guix 1.3
 - Guix 1.4
 
-# License
+## License
 
 Licensed under the GPLv3; copyright is assigned to my eponymous nonprofit [enzu.ru](https://enzu.ru)
