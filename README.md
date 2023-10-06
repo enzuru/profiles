@@ -22,19 +22,30 @@ The goal is for Guix and Emacs to respectively provide the "backend" and "fronte
 
 ## Development platforms
 
+### Compiled
+
 - [C](https://en.wikipedia.org/wiki/C_(programming_language))
 - [C++](https://en.wikipedia.org/wiki/C%2B%2B)
-- [Clojure](https://clojure.org/)
-- [Common Lisp](https://www.sbcl.org/) (Steel Bank)
-- [Elixir](https://elixir-lang.org/)
 - [Go](https://go.dev/)
-- [Guile](https://www.gnu.org/software/guile/)
-- [Haskell](https://www.haskell.org/)
+- [Rust](https://www.rust-lang.org/)
+
+### Scripting
+
 - [Node.js](https://nodejs.org/en)
 - [PHP](https://www.php.net/)
 - [Python](https://www.python.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
-- [Rust](https://www.rust-lang.org/)
+
+### Functional
+
+- [Elixir](https://elixir-lang.org/)
+- [Haskell](https://www.haskell.org/)
+
+### Lisp
+
+- [Clojure](https://clojure.org/)
+- [Common Lisp](https://www.sbcl.org/) (Steel Bank)
+- [Guile](https://www.gnu.org/software/guile/)
 
 ## Usage
 
