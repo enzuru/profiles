@@ -13,7 +13,7 @@ The goal is for Guix and Emacs to respectively provide the "backend" and "fronte
 | Feature        | Tool                                                           |
 |----------------|----------------------------------------------------------------|
 | Browser        | [Nyxt](https://nyxt.atlas.engineer/)                           |
-| Editor         | [GNU Emacs](https://github.com/enzuru/.emacs.d)                |
+| Editor         | [Emacs](https://github.com/enzuru/.emacs.d)                |
 | File manager   | [Midnight Commander](https://midnight-commander.org/)          |
 | GPU stack      | [ROCm](https://www.amd.com/en/graphics/servers-solutions-rocm) |
 | Shell          | [fish](https://fishshell.com/)                                 |
