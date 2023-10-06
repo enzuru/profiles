@@ -4,7 +4,7 @@ My Guix profiles written in Scheme Lisp available as a learning tool.
 
 The goal of my profiles are to create a Lisp-oriented workstation: the backend (operating system) is defined in Scheme Lisp and the frontend ("desktop" environment) and its tools are defined in Emacs Lisp. For portability, I write most of my personal tools in Common Lisp. Other popular development environments are supported too.
 
-`enzuru.scm` installs important packages. `clone.scm` clones my [.emacs.d](https://github.com/enzuru/.emacs.d) and some important dotfiles for booting into the [exwm window manager](https://github.com/enzuru/.emacs.d), [Quicklisp](https://www.quicklisp.org/beta/), [services for receiving and tagging email](https://notmuchmail.org), etc. I also setup Emacs [with native compilation](https://www.emacswiki.org/emacs/GccEmacs).
+`enzuru.scm` installs important packages. `clone.scm` clones my [.emacs.d](https://github.com/enzuru/.emacs.d) and some important dotfiles for booting into [StumpWM](https://stumpwm.github.io), [Quicklisp](https://www.quicklisp.org/beta/), [services for receiving and tagging email](https://notmuchmail.org), etc.
 
 The goal is for Guix and Emacs to respectively provide the "backend" and "frontend" of my programming environment.
 
