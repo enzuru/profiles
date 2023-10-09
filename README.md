@@ -10,15 +10,16 @@ The goal is for Guix and Emacs to respectively provide the "backend" and "fronte
 
 ## Notable applications
 
-| Feature        | Tool                                                           |
-|----------------|----------------------------------------------------------------|
-| Browser        | [Nyxt](https://nyxt.atlas.engineer/)                           |
-| Editor         | [Emacs](https://github.com/enzuru/.emacs.d)                |
-| File manager   | [Midnight Commander](https://midnight-commander.org/)          |
-| GPU stack      | [ROCm](https://www.amd.com/en/graphics/servers-solutions-rocm) |
-| Shell          | [fish](https://fishshell.com/)                                 |
-| Terminal       | [kitty](https://sw.kovidgoyal.net/kitty/)                      |
-| Window manager | [StumpWM](https://stumpwm.github.io)                           |
+| Feature              | Tool                                                           |
+|----------------------|----------------------------------------------------------------|
+| Browser              | [Nyxt](https://nyxt.atlas.engineer/)                           |
+| Editor               | [Emacs](https://github.com/enzuru/.emacs.d)                    |
+| File manager         | [Midnight Commander](https://midnight-commander.org/)          |
+| GPU stack            | [ROCm](https://www.amd.com/en/graphics/servers-solutions-rocm) |
+| Shell                | [fish](https://fishshell.com/)                                 |
+| Terminal             | [kitty](https://sw.kovidgoyal.net/kitty/)                      |
+| Terminal multiplexer | [tmux](https://github.com/tmux/tmux/wiki)                      |
+| Window manager       | [StumpWM](https://stumpwm.github.io)                           |
 
 ## Development platforms
 
