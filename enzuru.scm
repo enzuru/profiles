@@ -5,13 +5,15 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "tree-sitter-markdown"
+  (list "emacs-next-pgtk"
+        "emacs-next"
+        "tree-sitter-python"
+        "tree-sitter-markdown"
         "tree-sitter-scheme"
         "tree-sitter-typescript"
         "tree-sitter-javascript"
         "tree-sitter-rust"
         "tree-sitter-ruby"
-        "tree-sitter-python"
         "tree-sitter-html"
         "tree-sitter-php"
         "tree-sitter-org"
