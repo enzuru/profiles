@@ -5,7 +5,10 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "emacs-next-pgtk"
+  (list "rust:cargo"
+        "man-pages"
+        "node"
+        "emacs-next-pgtk"
         "emacs-next"
         "tree-sitter-python"
         "tree-sitter-markdown"
@@ -105,7 +108,6 @@
         "pianobar"
         "nyxt"
         "gimp"
-        "node@14"
         "dbus"
         "screenfetch"
         "offlineimap3"
