@@ -5,7 +5,8 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "rust:cargo"
+  (list "godot"
+        "rust:cargo"
         "man-pages"
         "node"
         "emacs-next"
