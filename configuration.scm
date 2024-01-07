@@ -43,7 +43,7 @@ EndSection")))))
           (modify-services %desktop-services
                            (gdm-service-type config =>
                                              (gdm-configuration (auto-suspend? #f)
-                                                                (debug? #t))))))
+                                                                (debug? #f))))))
 
  (bootloader
   (bootloader-configuration
