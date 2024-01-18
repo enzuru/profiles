@@ -5,10 +5,11 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "godot"
+  (list "zip"
+        "godot"
         "rust:cargo"
         "man-pages"
-        "node"
+        "node@18.18"
         "emacs-next"
         "tree-sitter-python"
         "tree-sitter-markdown"
@@ -88,7 +89,7 @@
         "strace"
         "sbcl"
         "elixir"
-        "rust@1.67"
+        "rust"
         "ghc"
         "mc"
         "php"
