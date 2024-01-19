@@ -59,8 +59,8 @@ Setting up my Guix system is as simple as:
 ```
 guile -l clone.scm
 guix pull
-sudo guix system reconfigure configuration.scm
 guix package -m enzuru.scm
+sudo guix system reconfigure configuration.scm
 ```
 
 Note, `sudo` is needed because that guix command requires the user's path, so don't just run it as root.
