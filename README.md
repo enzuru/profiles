@@ -57,7 +57,7 @@ You'll want to modify these files to meet your own usecase; shouldn't take long.
 Setting up my Guix system is as simple as:
 
 ```
-./clone
+ansible-playbook clone.yml
 guix pull
 guix package -m enzuru.scm
 sudo guix system reconfigure configuration.scm

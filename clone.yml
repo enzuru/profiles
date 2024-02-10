@@ -1,0 +1,26 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Initialize git
+      git:
+        repo: 'git@github.com:enzuru/home.git'
+        dest: '~'
+        version: master
+        force: yes
+    - name: Clone .emacs.d repo
+      git:
+        repo: 'git@github.com:enzuru/.emacs.d.git'
+        dest: '~/.emacs.d'
+    - name: Clone src
+      git:
+        repo: 'git@github.com:enzuru/notes.git'
+        dest: '~/src/notes'
+    - name: Clone repositories
+      git:
+        repo: "{{ item.repo }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - { repo: 'https://github.com/stumpwm/stumpwm.git', dest: '~/quicklisp/local-projects/stumpwm' }
+        - { repo: 'https://github.com/stumpwm/clx-truetype.git', dest: '~/quicklisp/local-projects/clx-truetype' }
+        - { repo: 'https://github.com/xach/zpb-ttf.git', dest: '~/quicklisp/local-projects/zpb-ttf' }
+        - { repo: 'https://github.com/stumpwm/stumpwm-contrib.git', dest: '~/.stumpwm.d/contrib' }
