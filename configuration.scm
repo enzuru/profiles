@@ -35,7 +35,7 @@
                 (service docker-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
-'("Section \"Device\"
+                                                             '("Section \"Device\"
   Identifier \"AMD\"
   Driver \"amdgpu\"
   Option \"SWcursor\" \"on\"
@@ -45,18 +45,23 @@ EndSection")))))
                                              (gdm-configuration (auto-suspend? #f)
                                                                 (debug? #f))))))
 
- (bootloader
-  (bootloader-configuration
-   (bootloader grub-bootloader)
-   (target "/dev/sda")
-   (keyboard-layout keyboard-layout)))
+ (bootloader (bootloader-configuration
+              (bootloader grub-efi-bootloader)
+              (targets (list "/boot/efi"))
+              (keyboard-layout keyboard-layout)))
 
- (swap-devices
-  (list (uuid "5637957b-2157-44b4-a948-367a25f80743")))
+ (swap-devices (list (swap-space
+                      (target (uuid
+                               "5154f36a-9be4-47b9-ae77-089fc234c98d")))))
 
- (file-systems
-  (cons* (file-system
-          (mount-point "/")
-          (device (uuid "495afef9-3f45-4da1-aa4d-7079807b9090" 'ext4))
-          (type "ext4"))
-         %base-file-systems)))
+ (file-systems (cons* (file-system
+                       (mount-point "/boot/efi")
+                       (device (uuid "3848-FEE3"
+                                     'fat32))
+                       (type "vfat"))
+                      (file-system
+                       (mount-point "/")
+                       (device (uuid
+                                "bb69c1c2-2301-484a-bdef-cad5b0eec09e"
+                                'ext4))
+                       (type "ext4")) %base-file-systems)))
