@@ -15,3 +15,6 @@
         - { repo: 'git@github.com:enzuru/.emacs.d.git', dest: '~/.emacs.d' }
         - { repo: 'git@github.com:enzuru/notes.git', dest: '~/src/notes' }
         - { repo: 'https://github.com/stumpwm/stumpwm-contrib.git', dest: '~/.stumpwm.d/contrib' }
+        - { repo: 'https://github.com/stumpwm/stumpwm.git', dest: '~/quicklisp/local-projects/stumpwm' }
+        - { repo: 'https://github.com/stumpwm/clx-truetype.git', dest: '~/quicklisp/local-projects/clx-truetype' }
+        - { repo: 'https://github.com/xach/zpb-ttf.git', dest: '~/quicklisp/local-projects/zpb-ttf' }
