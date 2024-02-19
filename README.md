@@ -56,11 +56,13 @@ You'll want to modify these files to meet your own usecase; shouldn't take long.
 
 Setting up my Guix system is as simple as:
 
-```
+```sh
 ansible-playbook clone.yml
+# reboot
 guix pull
 guix package -m enzuru.scm
 sudo guix system reconfigure configuration.scm
+# reboot
 ```
 
 Note, `sudo` is needed because that guix command requires the user's path, so don't just run it as root.
