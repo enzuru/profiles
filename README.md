@@ -61,7 +61,7 @@ ansible-playbook clone.yml
 # reboot
 guix pull
 guix package -m enzuru.scm
-sudo guix system reconfigure configuration.scm
+sudo guix system reconfigure config.scm
 # reboot
 ```
 

@@ -33,6 +33,7 @@
   (append (list (service openssh-service-type)
                 (service tor-service-type)
                 (service docker-service-type)
+                (service ntp-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
                                                              '("Section \"Device\"
