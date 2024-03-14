@@ -57,6 +57,9 @@ You'll want to modify these files to meet your own usecase; shouldn't take long.
 Setting up my Guix system is as simple as:
 
 ```sh
+guix install git ansible
+git clone git@github.com:enzuru/profiles.git
+cd profiles
 ansible-playbook clone.yml
 # reboot
 guix pull
