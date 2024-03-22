@@ -63,7 +63,7 @@ cd profiles
 ansible-playbook clone.yml
 # reboot
 guix pull
-guix package -m enzuru.scm
+guix home reconfigure home/config.scm
 sudo guix system reconfigure config.scm
 # reboot
 ```

@@ -4,7 +4,7 @@
              (gnu packages shells)
              (nongnu packages linux)
              (nongnu system linux-initrd))
-(use-service-modules desktop networking ssh xorg docker)
+(use-service-modules desktop networking ssh xorg docker mcron)
 
 (operating-system
  (locale "en_US.utf8")
@@ -33,6 +33,7 @@
   (append (list (service openssh-service-type)
                 (service tor-service-type)
                 (service docker-service-type)
+                (service mcron-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
                                                              '("Section \"Device\"
