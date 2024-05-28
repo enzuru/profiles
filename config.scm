@@ -25,8 +25,7 @@
 
  (packages
   (append (list (specification->package "openbox")
-                (specification->package "fish")
-                (specification->package "nss-certs"))
+                (specification->package "fish"))
           %base-packages))
 
  (services
@@ -34,6 +33,7 @@
                 (service tor-service-type)
                 (service docker-service-type)
                 (service mcron-service-type)
+                ;;(service gnome-desktop-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
                                                              '("Section \"Device\"
@@ -43,8 +43,10 @@
 EndSection")))))
           (modify-services %desktop-services
                            (gdm-service-type config =>
-                                             (gdm-configuration (auto-suspend? #f)
-                                                                (debug? #f))))))
+                                             (gdm-configuration
+                                              (wayland? #f)
+                                              (auto-suspend? #f)
+                                              (debug? #f))))))
 
  (bootloader (bootloader-configuration
               (bootloader grub-efi-bootloader)
