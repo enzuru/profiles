@@ -16,7 +16,7 @@
  (firmware (list linux-firmware))
  (users (cons* (user-account
                 (name "enzuru")
-                (comment "Ahmed Khanzada")
+                (comment "")
                 (group "users")
                 (home-directory "/home/enzuru")
                 (shell (file-append fish "/bin/fish"))
