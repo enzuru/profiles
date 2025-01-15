@@ -31,6 +31,7 @@
  (services
   (append (list (service openssh-service-type)
                 (service tor-service-type)
+                (service containerd-service-type)
                 (service docker-service-type)
                 (service mcron-service-type)
                 ;;(service gnome-desktop-service-type)
