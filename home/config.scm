@@ -21,14 +21,11 @@
 
 ;; Jobs
 
-(define job-clear-cache
-  #~(job "0 * * * *" "~/bin/clear-cache &> clear-cache.log"))
-
 (define job-updatedb
   #~(job "*/1 * * * *" "updatedb --localpaths=/home/enzuru --output=/home/enzuru/locatedb.n"))
 
 (define job-tag-mail
-  #~(job "*/5 * * * *" "~/bin/tag-mail &> tag-mail.log"))
+  #~(job "*/1 * * * *" "~/bin/tag-mail"))
 
 ;; Packages and environment
 
@@ -103,7 +100,7 @@
    (service home-mcron-service-type
             (home-mcron-configuration
              (jobs
-              (list job-clear-cache job-updatedb job-tag-mail))))
+              (list job-updatedb job-tag-mail))))
    (service home-shepherd-service-type
             (home-shepherd-configuration
              (auto-start? #t)
