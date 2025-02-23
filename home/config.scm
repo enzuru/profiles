@@ -77,7 +77,6 @@
              "nyxt"
              "offlineimap3"
              "openjdk"
-             "openmw"
              "pianobar"
              "python"
              "python-lsp-server"
