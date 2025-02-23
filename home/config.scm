@@ -35,8 +35,6 @@
 (home-environment
  (packages (specifications->packages
             (list
-             "amd-microcode"
-             "amdgpu-firmware"
              "ansible"
              "aspell"
              "aspell-dict-en"
@@ -45,9 +43,7 @@
              "ccls"
              "clojure"
              "clojure-tools"
-             "containerd"
              "curl"
-             "dbus"
              "docker"
              "docker-cli"
              "elixir"
@@ -99,7 +95,6 @@
              "sbcl"
              "setxkbmap"
              "tmux"
-             "xf86-video-amdgpu"
              "xhost"
              "xlsfonts"
              "xrdb"
