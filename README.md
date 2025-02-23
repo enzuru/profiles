@@ -28,13 +28,11 @@ The goal is for Guix and Emacs to respectively provide the "backend" and "fronte
 - [C](https://en.wikipedia.org/wiki/C_(programming_language))
 - [C++](https://en.wikipedia.org/wiki/C%2B%2B)
 - [Go](https://go.dev/)
-- [Objective-C](https://gnustep.github.io/) (GNUstep)
 - [Rust](https://www.rust-lang.org/)
 
 ### Scripting
 
 - [Node.js](https://nodejs.org/en)
-- [PHP](https://www.php.net/)
 - [Python](https://www.python.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
 
