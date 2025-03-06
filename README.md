@@ -62,7 +62,7 @@ ansible-playbook clone.yml
 # reboot
 guix pull
 guix home reconfigure home/config.scm
-sudo guix system reconfigure config.scm
+sudo guix system reconfigure <device>.scm
 # reboot
 ```
 

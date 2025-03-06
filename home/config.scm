@@ -53,6 +53,7 @@
              "font-iosevka"
              "font-microsoft-web-core-fonts"
              "font-terminus"
+             "font-fira-code"
              "fontconfig"
              "gcc-toolchain"
              "gdb"
@@ -95,12 +96,19 @@
              "xterm")))
 
  (services
-  (list
-   (service home-mcron-service-type
-            (home-mcron-configuration
-             (jobs
-              (list job-updatedb job-tag-mail))))
-   (service home-shepherd-service-type
-            (home-shepherd-configuration
-             (auto-start? #t)
-             (services (list service-offlineimap)))))))
+  (append
+   (list
+    (service home-bash-service-type
+             (home-bash-configuration
+              (guix-defaults? #t)
+              (bash-profile (list (plain-file "bash-profile" "\
+export HISTFILE=$XDG_CACHE_HOME/.bash_history")))))
+    (service home-mcron-service-type
+             (home-mcron-configuration
+              (jobs
+               (list job-updatedb job-tag-mail))))
+    (service home-shepherd-service-type
+             (home-shepherd-configuration
+              (auto-start? #t)
+              (services (list service-offlineimap)))))
+  %base-home-services)))
