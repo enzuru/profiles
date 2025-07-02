@@ -62,6 +62,7 @@
              "gimp"
              "git"
              "glances"
+             "gnugo"
              "go"
              "godot"
              "gopls"
