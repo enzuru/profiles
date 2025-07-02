@@ -49,23 +49,25 @@ EndSection")))))
                                               (auto-suspend? #f)
                                               (debug? #f))))))
 
- (bootloader (bootloader-configuration
-              (bootloader grub-efi-bootloader)
-              (targets (list "/boot/efi"))
-              (keyboard-layout keyboard-layout)))
+  (bootloader (bootloader-configuration
+                (bootloader grub-efi-bootloader)
+                (targets (list "/boot/efi"))
+                (keyboard-layout keyboard-layout)))
+  (swap-devices (list (swap-space
+                        (target (uuid
+                                 "6f31b427-bcef-4f07-9664-cab767fdaf6a")))))
 
- (swap-devices (list (swap-space
-                      (target (uuid
-                               "5154f36a-9be4-47b9-ae77-089fc234c98d")))))
-
- (file-systems (cons* (file-system
-                       (mount-point "/boot/efi")
-                       (device (uuid "3848-FEE3"
-                                     'fat32))
-                       (type "vfat"))
-                      (file-system
-                       (mount-point "/")
-                       (device (uuid
-                                "bb69c1c2-2301-484a-bdef-cad5b0eec09e"
-                                'ext4))
-                       (type "ext4")) %base-file-systems)))
+  ;; The list of file systems that get "mounted".  The unique
+  ;; file system identifiers there ("UUIDs") can be obtained
+  ;; by running 'blkid' in a terminal.
+  (file-systems (cons* (file-system
+                         (mount-point "/boot/efi")
+                         (device (uuid "7D64-9652"
+                                       'fat32))
+                         (type "vfat"))
+                       (file-system
+                         (mount-point "/")
+                         (device (uuid
+                                  "ba1e94cd-42e0-4faa-abf9-b03d9ecb9c7a"
+                                  'ext4))
+                         (type "ext4")) %base-file-systems)))
