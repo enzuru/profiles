@@ -8,7 +8,7 @@
 
 (operating-system
  (locale "en_US.utf8")
- (timezone "America/New_York")
+ (timezone "America/Los_Angeles")
  (keyboard-layout (keyboard-layout "us"))
  (host-name "guix")
  (kernel linux)
@@ -34,7 +34,7 @@
                 (service containerd-service-type)
                 (service docker-service-type)
                 (service mcron-service-type)
-                ;;(service gnome-desktop-service-type)
+                (service ntp-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
                                                              '("Section \"Device\"
