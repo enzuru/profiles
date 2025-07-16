@@ -98,6 +98,7 @@
              "texinfo"
              "tmux"
              "tree-sitter"
+             "tree-sitter-c"
              "xhost"
              "xlsfonts"
              "xrdb"
