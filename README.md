@@ -8,6 +8,8 @@ The goal of my profiles are to create a Lisp-oriented workstation: the backend (
 
 The goal is for Guix and Emacs to respectively provide the "backend" and "frontend" of my workstation.
 
+Using [org-roam-ui](https://github.com/org-roam/org-roam-ui), you can [navigate a tree visualizing](https://enzuru.github.io/lisp-user-space/) how my [Lisp user space](https://github.com/enzuru) tools work together on the [GNU operating system](https://gnu.org).
+
 ## Notable applications
 
 | Feature              | Tool                                                           |
