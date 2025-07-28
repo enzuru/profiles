@@ -73,7 +73,3 @@ Note, `sudo` is needed because that guix command requires the user's path, so do
 Probably works on any modern version of Guix. Here's what I've actually tested recently:
 
 - Guix 1.4
-
-## License
-
-Licensed under the GPLv3; copyright is assigned to my eponymous charity [enzu.ru](https://enzu.ru)
