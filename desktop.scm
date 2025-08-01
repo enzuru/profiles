@@ -2,8 +2,11 @@
 
 (use-modules (gnu)
              (gnu packages shells)
+             (gnu services desktop)
              (nongnu packages linux)
-             (nongnu system linux-initrd))
+             (nongnu system linux-initrd)
+             ;; (custom-kernel)
+             )
 (use-service-modules desktop networking ssh xorg docker mcron)
 
 (operating-system
@@ -34,7 +37,7 @@
                 (service containerd-service-type)
                 (service docker-service-type)
                 (service mcron-service-type)
-                (service ntp-service-type)
+                (service gnome-desktop-service-type)
                 (set-xorg-configuration (xorg-configuration (keyboard-layout keyboard-layout)
                                                             (extra-config
                                                              '("Section \"Device\"
@@ -45,7 +48,7 @@ EndSection")))))
           (modify-services %desktop-services
                            (gdm-service-type config =>
                                              (gdm-configuration
-                                              (wayland? #f)
+                                              (wayland? #t)
                                               (auto-suspend? #f)
                                               (debug? #f))))))
 
